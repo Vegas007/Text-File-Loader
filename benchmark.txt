@@ -1,0 +1,38 @@
+ANDROID_LINK	http://www.antutu.com/en/ranking/rank1.htm
+IOS_LINK		http://www.antutu.com/en/ranking/ios1.htm
+DOWNLOAD_LINK	http://www.antutu.com/en/download.htm
+
+Group Antutu_Benchmark_Android
+{
+	LAST_UPDATED	"September 2019"
+
+	Group Device00
+	{
+		NAME				"ROG Phone 2"
+		RAM_AND_STORAGE		"8GB+128GB"
+		CPU					127580
+		UX					81187
+		3D					173673
+		TOTAL_SCORE			396200
+	}
+	
+	Group Device01
+	{
+		NAME				"Asus ZenFone 6 2019"
+		RAM_AND_STORAGE		"6GB+128GB"
+		CPU					115926
+		UX					72764
+		3D					175221
+		TOTAL_SCORE			377199
+	}
+	
+	Group Device02
+	{
+		NAME				"OnePlus 7 Pro"
+		RAM_AND_STORAGE		"8GB+256GB"
+		CPU					122874
+		UX					77862
+		3D					157802
+		TOTAL_SCORE			373097
+	}
+}
