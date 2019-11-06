@@ -1,10 +1,12 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 __name__ = "TextFileLoader"
 __author__ = "VegaS"
 __date__ = "2019-10-31"
 __version__ = "0.0.3"
 
 import os
+import sys
 
 #################################################
 ## Builtin translations
@@ -35,7 +37,7 @@ if USING_METIN2_CLIENT:
 	TraceFormat = lambda arg: dbg.TraceError(arg)
 	IsExistFile = lambda arg: app.IsExistFile(arg)
 else:
-	TraceFormat = lambda arg: print(arg)
+	TraceFormat = lambda arg: sys.stdout.write(arg + "\n")
 	IsExistFile = lambda arg: os.path.exists(arg)
 
 NPOS = -1
@@ -605,7 +607,6 @@ class TextFileLoader:
 			return json.dumps(self.m_tokensDict)
 		"""
 		pass
-
 
 if __name__ == "__main__":
 	def LoadFileTest(c_szFileName):
