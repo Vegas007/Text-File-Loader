@@ -107,7 +107,7 @@ class GroupNode:
 		""" Returns a bool object, check if the token name exists inside of the dictionary. """
 		return tokenName in self.localTokenDict
 
-	def SetToken(self, tokenName, tokenValue):
+	def SetToken(self, tokenName, *tokenValue):
 		""" Insert in dictionary a new token name and his value, the parameter of tokenValue can be a string or a list of strings. """
 		self.localTokenDict.update({tokenName: tokenValue})
 
